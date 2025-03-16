@@ -1,0 +1,24 @@
+SELECT SYS_CONTEXT('USERENV', 'CON_NAME') AS CON_NAME FROM DUAL
+/
+SELECT * FROM DBA_PDBS;
+/
+ALTER SESSION SET CONTAINER = 'XEPDB1'
+/
+CREATE USER bank_admin IDENTIFIED BY "BankAdmin@SLS"
+/
+GRANT CONNECT, RESOURCE TO bank_admin
+ALTER USER bank_admin QUOTA UNLIMITED ON USERS
+/
+ALTER SESSION SET CURRENT_SCHEMA = bank_admin
+/
+CREATE TABLE bank_admin.loan_applications (
+    id NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+    applicant_id NUMBER NOT NULL,
+    requested_amount NUMBER(15,2) NOT NULL,
+    status VARCHAR2(20) DEFAULT 'PENDING' NOT NULL,
+    sanctioned_amount NUMBER(15,2)
+)
+/
+SELECT username FROM dba_users WHERE username = 'BANK_ADMIN';
+/
+SELECT * FROM loan_applications

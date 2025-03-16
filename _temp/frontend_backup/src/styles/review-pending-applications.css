@@ -1,0 +1,86 @@
+.review-pending-content {
+  padding: 40px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #F9FAFB;
+  color: #1F2937;
+}
+
+.review-pending-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.review-pending-subtitle {
+  font-size: 0.9rem;
+  color: #6B7280;
+  margin-bottom: 30px;
+}
+
+.pending-applications-table {
+  overflow-x: auto;
+}
+
+.pending-applications-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.pending-applications-table th,
+.pending-applications-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.pending-applications-table th {
+  background-color: #F3F4F6;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.pending-applications-table td {
+  color: #6B7280;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.status.pending {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+}
+
+.action-button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-color 0.2s ease;
+}
+
+.approve-button {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+}
+
+.approve-button:hover {
+  background-color: #2563EB;
+}
+
+.reject-button {
+  background-color: #EF4444;
+  color: #FFFFFF;
+}
+
+.reject-button:hover {
+  background-color: #DC2626;
+}

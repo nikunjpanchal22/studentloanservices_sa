@@ -1,0 +1,81 @@
+.manage-loans-content {
+  padding: 40px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #F9FAFB;
+  color: #1F2937;
+}
+
+.manage-loans-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.manage-loans-subtitle {
+  font-size: 0.9rem;
+  color: #6B7280;
+  margin-bottom: 30px;
+}
+
+.loan-programs-table {
+  overflow-x: auto;
+}
+
+.loan-programs-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.loan-programs-table th,
+.loan-programs-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #E5E7EB;
+}
+
+.loan-programs-table th {
+  background-color: #F3F4F6;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.loan-programs-table td {
+  color: #6B7280;
+}
+
+.status {
+  display: inline-block;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+}
+
+.status.active {
+  background-color: #3B82F6;
+  color: #FFFFFF;
+}
+
+.status.inactive {
+  background-color: #EF4444;
+  color: #FFFFFF;
+}
+
+.action-button {
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #3B82F6;
+  color: #FFFFFF;
+  transition: background-color 0.2s ease;
+  min-width: 120px;
+  text-align: center; 
+  box-sizing: border-box;
+}
+
+.action-button:hover {
+  background-color: #2563EB;
+}
